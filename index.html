@@ -178,22 +178,12 @@
 
   /* CONTACT */
   #contact{padding:100px 0 80px;background:#030712}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
-  .contact-lead{font-size:1.05rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px}
-  .contact-links{display:flex;flex-direction:column;gap:14px}
+  .contact-lead{font-size:1.05rem;color:var(--text-secondary);line-height:1.75;margin-bottom:32px;max-width:640px}
+  .contact-links{display:flex;flex-direction:column;gap:14px;max-width:560px}
   .contact-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text-secondary);font-size:.9rem;padding:12px 16px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:8px;transition:all .2s}
   .contact-link:hover{border-color:var(--cyan);color:var(--text-primary);box-shadow:var(--glow-cyan);transform:translateX(4px)}
   .contact-link-icon{font-size:1.1rem;width:20px;text-align:center}
   .contact-link-label{font-family:var(--mono);font-size:.7rem;color:var(--cyan);margin-left:auto;letter-spacing:.08em}
-  .contact-form{background:var(--card-bg);border:1px solid var(--card-border);border-radius:12px;padding:32px}
-  .form-title{font-family:var(--mono);font-size:.75rem;color:var(--cyan);letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px}
-  .form-group{margin-bottom:18px}
-  .form-label{font-family:var(--mono);font-size:.68rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:7px}
-  .form-input,.form-textarea{width:100%;background:rgba(3,7,18,.7);border:1px solid rgba(30,58,95,.8);border-radius:6px;padding:11px 14px;color:var(--text-primary);font-size:.88rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s}
-  .form-input:focus,.form-textarea:focus{border-color:rgba(0,229,255,.5);box-shadow:0 0 0 3px rgba(0,229,255,.08)}
-  .form-textarea{resize:vertical;min-height:100px;line-height:1.6}
-  .form-submit{width:100%;background:linear-gradient(135deg,var(--blue) 0%,#0369a1 100%);color:#fff;border:none;padding:13px 24px;border-radius:6px;font-weight:600;font-size:.88rem;cursor:pointer;transition:all .25s;font-family:'Inter',sans-serif;margin-top:4px}
-  .form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(2,132,199,.45)}
 
   /* FOOTER */
   footer{background:#020509;border-top:1px solid rgba(30,58,95,.5);padding:28px 0}
@@ -527,25 +517,13 @@
 <section id="contact">
   <div class="container">
     <div class="fade-in"><div class="section-label">connect</div><h2 class="section-title">Let&rsquo;s Work Together</h2><div class="section-line"></div></div>
-    <div class="contact-grid">
-      <div class="fade-in">
-        <p class="contact-lead">Whether you need a <strong style="color:var(--text-primary)">security architecture review</strong>, a Zero Trust implementation, a DevSecOps pipeline transformation, or an AI security governance framework &mdash; let&rsquo;s talk about what measurable outcomes look like for your organisation.</p>
-        <div class="contact-links">
-          <a href="mailto:rakeshprashanth.s@gmail.com" class="contact-link"><span class="contact-link-icon">&#9993;</span>rakeshprashanth.s@gmail.com<span class="contact-link-label">EMAIL &rarr;</span></a>
-          <a href="https://www.linkedin.com/in/rakeshps" target="_blank" class="contact-link"><span class="contact-link-icon">&#128188;</span>linkedin.com/in/rakeshps<span class="contact-link-label">LINKEDIN &rarr;</span></a>
-          <a href="tel:+16478797408" class="contact-link"><span class="contact-link-icon">&#128222;</span>+1 647-879-7408<span class="contact-link-label">CALL &rarr;</span></a>
-          <div class="contact-link" style="cursor:default"><span class="contact-link-icon">&#128205;</span>Toronto, Ontario &middot; Canada<span class="contact-link-label">Open to Remote</span></div>
-        </div>
-      </div>
-      <div class="fade-in contact-form">
-        <div class="form-title">// Send a Message</div>
-        <form onsubmit="handleForm(event)">
-          <div class="form-group"><label class="form-label">Name</label><input type="text" class="form-input" placeholder="Your name" required></div>
-          <div class="form-group"><label class="form-label">Organisation</label><input type="text" class="form-input" placeholder="Company or organisation"></div>
-          <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@email.com" required></div>
-          <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Describe your engagement need..."></textarea></div>
-          <button type="submit" class="form-submit">Send Message &rarr;</button>
-        </form>
+    <div class="fade-in">
+      <p class="contact-lead">Whether you need a <strong style="color:var(--text-primary)">security architecture review</strong>, a Zero Trust implementation, a DevSecOps pipeline transformation, or an AI security governance framework &mdash; let&rsquo;s talk about what measurable outcomes look like for your organisation.</p>
+      <div class="contact-links">
+        <a href="mailto:rakeshprashanth.s@gmail.com" class="contact-link"><span class="contact-link-icon">&#9993;</span>rakeshprashanth.s@gmail.com<span class="contact-link-label">EMAIL &rarr;</span></a>
+        <a href="https://www.linkedin.com/in/rakeshps" target="_blank" class="contact-link"><span class="contact-link-icon">&#128188;</span>linkedin.com/in/rakeshps<span class="contact-link-label">LINKEDIN &rarr;</span></a>
+        <a href="tel:+16478797408" class="contact-link"><span class="contact-link-icon">&#128222;</span>+1 647-879-7408<span class="contact-link-label">CALL &rarr;</span></a>
+        <div class="contact-link" style="cursor:default"><span class="contact-link-icon">&#128205;</span>Toronto, Ontario &middot; Canada<span class="contact-link-label">Open to Remote</span></div>
       </div>
     </div>
   </div>
@@ -584,7 +562,6 @@
 function toggleMenu(){document.getElementById('nav-menu').classList.toggle('open')}
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-function handleForm(e){e.preventDefault();const b=e.target.querySelector('.form-submit');b.textContent='Message Sent ✓';b.style.background='linear-gradient(135deg,#166534,#15803d)';setTimeout(()=>{b.textContent='Send Message →';b.style.background='';e.target.reset()},3500)}
 window.addEventListener('scroll',()=>{let c='';document.querySelectorAll('section[id]').forEach(s=>{if(window.scrollY>=s.offsetTop-100)c=s.id});document.querySelectorAll('.nav-links a').forEach(a=>{a.style.color=a.getAttribute('href')==='#'+c?'var(--cyan)':''})},{passive:true});
 </script>
 </body>
